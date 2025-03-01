@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed & Nourhan - Wedding Invitation</title>
+  <link rel="icon" href="https://media-hosting.imagekit.io//d1c4c0be57f44ce5/Untitled%20design.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loader">
+    <div class="ring"></div>
+  </div>
+
+  <div class="container" id="content">
+    <!-- Existing content remains the same until RSVP section -->
+
+    <div class="rsvp-section fade-in">
+      <h3 id="rsvp-title">RSVP Here</h3>
+      <form id="rsvpForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <select id="attendance">
+          <option value="attending">Attending with Joy</option>
+          <option value="not-attending">Regretfully Can't Attend</option>
+        </select>
+        <button type="submit" class="button">Submit RSVP</button>
+      </form>
+    </div>
+
+    <div class="gallery fade-in">
+      <h3 id="gallery-title">Our Moments</h3>
+      <div class="gallery-grid">
+        <img src="https://via.placeholder.com/300x200?text=Photo1" alt="Couple photo 1">
+        <img src="https://via.placeholder.com/300x200?text=Photo2" alt="Couple photo 2">
+        <img src="https://via.placeholder.com/300x200?text=Photo3" alt="Couple photo 3">
+      </div>
+    </div>
+
+    <div class="timeline fade-in">
+      <h3 id="timeline-title">Our Love Story</h3>
+      <div class="timeline-item">
+        <div class="timeline-date">2018</div>
+        <div class="timeline-content">First Met</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2020</div>
+        <div class="timeline-content">First Date</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">Engagement</div>
+      </div>
+    </div>
+
+    <div class="weather-widget fade-in">
+      <h3 id="weather-title">Wedding Day Weather</h3>
+      <div id="weather-info">Loading...</div>
+    </div>
+
+    <div class="social-share fade-in">
+      <button class="share-button" onclick="shareOnFacebook()">Share on Facebook</button>
+      <button class="share-button" onclick="shareOnWhatsApp()">Share on WhatsApp</button>
+    </div>
+
+    <!-- Existing footer and language switch remain -->
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
